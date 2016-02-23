@@ -1,0 +1,14 @@
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\LifeGame.exe.config
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\LifeGame.exe
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\LifeGame.pdb
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.exe
+c:\users\user\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.pdb
+C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\LifeGame.exe.manifest
+C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\LifeGame.application
+C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.TrustInfo.xml
+C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.exe.manifest
+C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.application
