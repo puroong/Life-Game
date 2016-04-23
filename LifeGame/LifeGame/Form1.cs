@@ -13,6 +13,7 @@ namespace LifeGame
 {
     public partial class Form1 : Form
     {
+        #region variables
         private const int boxWidth = 20;
         private const int boxHeight = 20;
 
@@ -24,12 +25,14 @@ namespace LifeGame
 
         private bool doAuto = false;
         private bool MouseDown = false;
+        #endregion
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        #region control events
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -48,7 +51,7 @@ namespace LifeGame
             t.Start();
 
         }
-
+ 
         private void btnAutoStop_Click(object sender, EventArgs e)
         {
             btnAuto.Enabled = true;
@@ -57,6 +60,7 @@ namespace LifeGame
             doAuto = false;
             btnAutoStop.Enabled = false;
         }
+
         private void pictureBox_Click(object sender, EventArgs e)
         {
             int pXClick = ((MouseEventArgs)e).X;
@@ -100,6 +104,7 @@ namespace LifeGame
             pictureBox.Invalidate();
             pCurGen.Clear();
         }
+
         private void pictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             MouseDown = false;
@@ -135,13 +140,33 @@ namespace LifeGame
                 Die(nPoint);
             }
         }
-        private void AutoExe() {
-            while (doAuto) {
+
+ 
+
+        private void btnNextState_Click(object sender, EventArgs e)
+        {
+            NextGeneration();
+        }
+        private void btnPrevState_Click(object sender, EventArgs e)
+        {
+            PrevGeneration();
+        }
+        #endregion
+
+        #region 프로그램 로직 관련 함수
+        /// <summary>
+        /// 자동실행 함수
+        /// </summary>
+        private void AutoExe()
+        {
+            while (doAuto)
+            {
                 pictureBox.Invoke(new MethodInvoker(NextGeneration));
 
                 Thread.Sleep(1000);
             }
         }
+
         /// <summary>
         /// 주위에 이웃이 몇인지 센다
         /// </summary>
@@ -172,6 +197,7 @@ namespace LifeGame
                 cnt++;
             return cnt;
         }
+        
         /// <summary>
         /// 죽을 생명을 pCurGen과 화면에서 지운다
         /// </summary>
@@ -198,6 +224,7 @@ namespace LifeGame
         /// 존재하던 생명 화면에 보여주기
         /// </summary>
         /// <param name="point"></param>
+
         private void ShowLife(Point point)
         {
             Graphics g = pictureBox.CreateGraphics();
@@ -225,6 +252,7 @@ namespace LifeGame
             }
             //pCurGen.UnionWith(pNewLife);
         }
+
         private void Chk(Point point) {
             Point Up = (new Point(point.X, point.Y + boxHeight));
             Point Down = new Point(point.X, point.Y - boxHeight);
@@ -238,6 +266,7 @@ namespace LifeGame
                     pNewLife.Add(PArr[i]);
             }
         }
+        
         /// <summary>
         /// 다음 세대 생명을 찾는다
         /// </summary>
@@ -284,19 +313,7 @@ namespace LifeGame
         {
             
         }
-        private void btnNextState_Click(object sender, EventArgs e)
-        {
-            NextGeneration();
-        }
-        private void btnPrevState_Click(object sender, EventArgs e)
-        {
-            PrevGeneration();
-        }
 
-        ~Form1() {
-            
-        }
-       
-      
+        #endregion
     }
 }
