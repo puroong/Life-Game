@@ -12,3 +12,4 @@ C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\bin\Debug\
 C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.TrustInfo.xml
 C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.exe.manifest
 C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.application
+C:\Users\User\Documents\Visual Studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.Setting.resources
