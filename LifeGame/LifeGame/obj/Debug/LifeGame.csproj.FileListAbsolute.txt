@@ -13,3 +13,6 @@ C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\
 C:\Users\User\documents\visual studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.application
 C:\Users\User\Documents\Visual Studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.Setting.resources
 C:\Users\User\Documents\Visual Studio 2015\Projects\LifeGame\LifeGame\obj\Debug\LifeGame.MainForm.resources
+C:\Users\User\Documents\Life-Game\LifeGame\LifeGame\bin\Debug\LifeGame.exe.config
+C:\Users\User\Documents\Life-Game\LifeGame\LifeGame\obj\Debug\LifeGame.exe
+C:\Users\User\Documents\Life-Game\LifeGame\LifeGame\obj\Debug\LifeGame.pdb
