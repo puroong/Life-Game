@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Threading;
 namespace LifeGame
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         #region variables
         internal static readonly int maxBoxLen=720;
@@ -33,7 +33,7 @@ namespace LifeGame
         internal static double autoRunInterval = 1;
         #endregion
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }

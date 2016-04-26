@@ -1,6 +1,6 @@
 ﻿namespace LifeGame
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btnAuto = new System.Windows.Forms.Button();
             this.btnNextState = new System.Windows.Forms.Button();
