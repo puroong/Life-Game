@@ -23,6 +23,9 @@ namespace LifeGame
 
         private HashSet<Point> pCurGen = new HashSet<Point>();//현재 색칠 된 상자의 좌표들 
         private HashSet<Point> pNewLife;
+        private HashSet<Point> pPrevGen;
+
+        private Stack<HashSet<Point>> history = new Stack<HashSet<Point>>();
 
         private bool doAuto = false;
         private new bool MouseDown = false;
@@ -113,6 +116,7 @@ namespace LifeGame
         private void btnInit_Click(object sender, EventArgs e)
         {
             pictureBox.Invalidate();
+            history.Clear();
             pCurGen.Clear();
         }
 
@@ -278,6 +282,9 @@ namespace LifeGame
             Point[] newLife;
             int countNew = 0;
 
+            //현재 새명들 저장
+            history.Push(new HashSet<Point>(pCurGen));
+
             //새 생명들 좌표 찾는다
             FindNewLife();
 
@@ -310,7 +317,38 @@ namespace LifeGame
         /// </summary>
         private void PrevGeneration()
         {
-            
+            try
+            {
+                pPrevGen = history.Pop();
+                int cntLife = pCurGen.Count;//현재 생명 수
+                Point[] die = new Point[cntLife];//죽을 생명 list
+                int countDie = pCurGen.Count;
+
+                int k = -1;
+
+                foreach (Point p in pCurGen)
+                {
+                    k++;
+                    die[k] = p;
+                }
+
+                for (int i = 0; i < countDie; i++)
+                {
+                    Die(die[i]);
+                }
+
+                foreach (Point p in pPrevGen)
+                {
+                    NewLife(p);
+                }
+            }
+            catch (InvalidOperationException exp)
+            {
+                MessageBox.Show("더 이상 뒤로 갈 수 없습니다");
+            }
+            catch (Exception exp) {
+                MessageBox.Show("알 수 없는 에러");
+            }
         }
 
         #endregion
