@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LifeGame.exe" size="104360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LifeGame.exe" size="104872">
       <assemblyIdentity name="LifeGame" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mjzb7VY99rJj5EPpIKS5NHY8GB8maTXaL5odKCyK8PI=</dsig:DigestValue>
+        <dsig:DigestValue>a3XISi93gDRdy55Njj/hqXv9SHYSPRfwMFiXx5TvCt4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
